@@ -1,10 +1,11 @@
-import React from "react";
+import ProjectsCard from "../components/ProjectsCard";
 
 const Projects = () => {
   return (
-    <div className='text-white'>
-      <h1>Blog Page</h1>
-      <p>This is the blog page Project.</p>
+    <div className='flex justify-evenly  items-center flex-wrap '>
+      <ProjectsCard />
+      <ProjectsCard />
+      <ProjectsCard />
     </div>
   );
 };
