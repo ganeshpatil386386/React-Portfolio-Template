@@ -16,25 +16,23 @@ function App() {
 
   return (
     <Router>
-      <Analytics>
-        <div className={isDark ? "dark" : ""}>
-          <div
-            className={`min-h-screen flex flex-col ${
-              isDark
-                ? "bg-slate-800 text-white"
-                : "bg-slate-100 text-black overflow-auto"
-            }`}
-          >
-            <Navbar isDark={isDark} toggleDark={toggleDark} />
-            <Routes>
-              <Route path='/blogs' element={<Blogs />} />
-              <Route path='/projects' element={<Projects />} />
-              <Route path='/youtube' element={<Youtube />} />
-              <Route path='/' element={<Content />} />
-            </Routes>
-          </div>
+      <div className={isDark ? "dark" : ""}>
+        <div
+          className={`min-h-screen flex flex-col ${
+            isDark
+              ? "bg-slate-800 text-white"
+              : "bg-slate-100 text-black overflow-auto"
+          }`}
+        >
+          <Navbar isDark={isDark} toggleDark={toggleDark} />
+          <Routes>
+            <Route path='/blogs' element={<Blogs />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/youtube' element={<Youtube />} />
+            <Route path='/' element={<Content />} />
+          </Routes>
         </div>
-      </Analytics>
+      </div>
     </Router>
   );
 }
