@@ -6,6 +6,7 @@ import TwitterXFillIcon from "remixicon-react/TwitterFillIcon";
 const Content = () => {
   return (
     <div className='flex flex-col items-center p-16'>
+      <link rel='preload' as='image' href={profile} />
       <div className='mb-4'>
         <img
           src={profile}
